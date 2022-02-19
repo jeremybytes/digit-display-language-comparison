@@ -1,0 +1,9 @@
+[submodule "csharp"]
+	path = csharp
+	url = ./csharp.git
+[submodule "golang"]
+	path = golang
+	url = ./golang.git
+[submodule "rust-lang"]
+	path = rust-lang
+	url = ./rust-lang.git
