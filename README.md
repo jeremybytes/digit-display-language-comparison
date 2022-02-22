@@ -1,6 +1,12 @@
 # Digit Display - Comparing 3 Language Implementations
 This code was written as an exercise to learn some differences between Rust (rust-lang), Go (golang), and C# (csharp). The same problem and general solution was implemented in all 3 languages/environments.
 
+**UPDATE**  
+The submodules on this repo are not working at the moment. (I'm new to submodules, and it was probably a bad idea.) In the meantime, feel free to visit the individual repos:  
+* Rust: [https://github.com/jeremybytes/digit-display-rust-lang-comparison](https://github.com/jeremybytes/digit-display-rust-lang-comparison)
+* Go: [https://github.com/jeremybytes/digit-display-golang-comparison](https://github.com/jeremybytes/digit-display-golang-comparison)
+* C#: [https://github.com/jeremybytes/digit-display-csharp-comparison](https://github.com/jeremybytes/digit-display-csharp-comparison)
+
 **Program Purpose:**
 
 Naive hand-written digit recognition with display applications to show image, prediction, and errors.  
