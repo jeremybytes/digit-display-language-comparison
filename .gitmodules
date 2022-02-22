@@ -1,9 +1,9 @@
 [submodule "csharp"]
 	path = csharp
-	url = ./csharp.git
+	url = https://github.com/jeremybytes/digit-display-csharp-comparison
 [submodule "golang"]
 	path = golang
-	url = ./golang.git
+	url = https://github.com/jeremybytes/digit-display-golang-comparison
 [submodule "rust-lang"]
 	path = rust-lang
-	url = ./rust-lang.git
+	url = https://github.com/jeremybytes/digit-display-rust-lang-comparison
