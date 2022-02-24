@@ -107,8 +107,7 @@ All outputs show the same number of errors (since they use the same algorithm an
 
 *csharp*  
 
-**Updated 2/23/2022:**  
-*Note: original time was 00:00:20.7 - see update notes below.*
+*Updated 2/23/2022: original time was 00:00:20.7 - see "Performance Updates" notes below.*
 ```
 Using Euclidean Classifier -- Offset: 1000   Count: 2000
 Total time: 00:00:05.0355685
@@ -136,7 +135,7 @@ The following runs were captured separately (so each would have the full use of 
 ![Screen capture comparison](/images/comparison.gif)
 
 *Updated Screen Capture*  
-![Screen capture comparison](/images/comparison2.gif)
+![Screen capture comparison](/images/comparison2.gif)  
 The current projects show C# as the fastest of the 3.  
 Summary:
 * C# - 5-ish seconds (down from 20 seconds)
