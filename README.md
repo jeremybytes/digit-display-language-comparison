@@ -136,7 +136,8 @@ The following runs were captured separately (so each would have the full use of 
 ![Screen capture comparison](/images/comparison.gif)
 
 *Updated Screen Capture*  
-An updated screen capture is coming soon. The current projects show C# as the fastest of the 3.  
+![Screen capture comparison](/images/comparison2.gif)
+The current projects show C# as the fastest of the 3.  
 Summary:
 * C# - 5-ish seconds (down from 20 seconds)
 * Go - 14-ish seconds
