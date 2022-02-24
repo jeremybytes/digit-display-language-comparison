@@ -105,10 +105,13 @@ The following shows a speed comparison between the various environments. These u
 
 All outputs show the same number of errors (since they use the same algorithm and data set). 
 
-*csharp*
+*csharp*  
+
+**Updated 2/23/2022:**  
+*Note: original time was 00:00:20.7 - see update notes below.*
 ```
 Using Euclidean Classifier -- Offset: 1000   Count: 2000
-Total time: 00:00:20.7013789
+Total time: 00:00:05.0355685
 Total errors: 59
 ```
 
@@ -129,12 +132,28 @@ Total errors: 59
 **Screen Capture**  
 The following runs were captured separately (so each would have the full use of the machine (or as much of the machine that was available apart from the OS and other bits)). The results were then combined into a single video.
 
+*Original Screen Capture*  
 ![Screen capture comparison](/images/comparison.gif)
+
+*Updated Screen Capture*  
+An updated screen capture is coming soon. The current projects show C# as the fastest of the 3.  
+Summary:
+* C# - 5-ish seconds (down from 20 seconds)
+* Go - 14-ish seconds
+* Rust - 7-ish seconds
 
 The numbers vary a bit from those above, but remain pretty consistent on my machine.
 
+**Performance Updates**  
+Based on feedback from several folks in the community, I made updates to the C# version of the application. (Suggestions for improving performance on the Go and Rust projects would be appreciated).  
+
+Additional information on the C# changes will follow. Here is the short version.  
+* List&lt;int&gt; changed to int[]
+* String concatenation changed from string+= to using StringBuilder
+* Abstract override method was moved out of a tight loop to a higher level. This results in duplicated code but a very large change in performance.
+
 **Thoughts**  
-As an experiment, this was quite interesting to me. Go and C# are similar in that they are garbage-collected languages (which adds some overhead), so it does not suprirse me that Rust is faster for these operations.  
+As an experiment, this was quite interesting to me. Go and C# are similar in that they are garbage-collected languages (which adds some overhead), so it does not suprirse me that Rust was faster in the original implementations.  
 
 Because of the memory model in Rust, that version was significantly more challenging to write. The C# code could not be ported directly; there are quite a few inefficiencies that I added to get the Rust code to work.
 
